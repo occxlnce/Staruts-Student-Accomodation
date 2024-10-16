@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}  
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-color: #F2F2F2; /* Sets a default background color */
+}
+
+p.description {
+  color: #0D0106;
+  font-size: 1.25rem; /* 20px */
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1.5rem; /* Adds space below the description */
+}
+
+/* Section Styling */
+.section {
+  width: 100%;
+  background: #F2F2F2;
+  position: relative;
+  padding: 2rem 1rem; /* Responsive padding */
+  margin-top: 70rem;
+}
+
+.sectionWrapper {
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto; /* Centers the wrapper */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Services Section */
+.services h6 {
+  margin-bottom: 0.3125rem; /* 5px */
+  text-align: center;
+  font-size: 1.25rem; /* 20px */
+  color: #0D65D9;
+}
+
+.services h2 {
+  margin-bottom: 0.9375rem; /* 15px */
+  text-align: center;
+  font-size: 2rem; /* 32px */
+  color: #0D65D9;
+}
+
+.services .description {
+  margin-bottom: 3.75rem; /* 60px */
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem; /* 32px gap between cards */
+  justify-items: center; /* Centers items horizontally */
+  align-items: start; /* Aligns items to the start vertically */
+  margin-top: 2rem; /* Adds space above the grid */
+  padding: 0; /* Removes any default padding */
+}
+
+.services .grid .card {
+  width: 100%;
+  max-width: 400px; /* Prevents cards from becoming too wide */
+  padding: 1.5rem; /* 24px padding */
+  background: linear-gradient(to bottom right, #0D65D9, #5C9DF2);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content within the card */
+  text-align: center;
+}
+
+.services .grid .card h3 {
+  color: #F2F2F2;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 700;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.services .grid .card p {
+  color: #F2F2F2;
+  font-size: 1rem; /* 16px */
+  font-weight: normal;
+  word-wrap: break-word; /* Ensures long words break */
+  max-width: 100%; /* Keeps text within the card */
+  line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets and Large Phones (576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sectionWrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .services .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem; /* 24px */
+  }
+
+  .services .grid .card {
+    padding: 1.25rem; /* 20px */
+  }
+
+  .services h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .services .description {
+    font-size: 1.1rem; /* 17.6px */
+    margin-bottom: 2.5rem; /* 40px */
+  }
+}
+
+/* Laptops and Desktops (768px to 1279.98px) */
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .sectionWrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .services .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem; /* 32px */
+  }
+
+  .services .grid .card {
+    padding: 1.5rem; /* 24px */
+  }
+
+  .services h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  .services .description {
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 3rem; /* 48px */
+  }
+}
+
+/* Small Devices (up to 575.98px) */
+@media (max-width: 575.98px) {
+  .sectionWrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .services .grid {
+    grid-template-columns: 1fr; /* Single column */
+    grid-gap: 1.5rem; /* 24px */
+  }
+
+  .services .grid .card {
+    padding: 1rem; /* 16px */
+  }
+
+  .services h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .services .description {
+    font-size: 1rem; /* 16px */
+    margin-bottom: 2rem; /* 32px */
+  }
+
+  .services .grid .card h3 {
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 0.5rem; /* 8px */
+  }
+
+  .services .grid .card p {
+    font-size: 0.95rem; /* 15.2px */
+  }
+}

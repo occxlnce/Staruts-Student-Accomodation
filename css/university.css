@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+@layer demo {
+  .university {
+    text-wrap: balance;
+    max-inline-size: 25ch;
+    font-size: clamp(2rem, 5vw, 5rem);
+    margin-inline: auto;
+    color: #F2F2F2;
+    text-shadow: 0 1px 1px #5C9DF2;
+  }
+  
+  .subhead {
+    text-wrap: balance;
+    max-inline-size: 60ch;
+    font-size: 18px;
+    font-weight: 300;
+    margin-inline: auto;
+    color: #5C9DF2;
+  }
+  
+  section {
+    background: 
+      linear-gradient(#0d0106ab 0 0),
+      url("https://images.pexels.com/photos/3466163/pexels-photo-3466163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    gap: 2ch;
+    place-content: center;
+    text-align: center;
+	background-repeat: no-repeat;
+  }
+}
+
+@layer demo.support {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    block-size: 100%;
+  }
+
+body {
+  width: 100%;
+  font-family: "Helvetica", sans-serif;
+  background-color: #F2F2F2;
+    display: grid;
+  }
+}

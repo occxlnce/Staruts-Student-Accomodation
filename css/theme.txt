@@ -1,0 +1,7 @@
+White: #F2F2F2;
+
+Black: #0D0106;
+
+Blue: #0D65D9;
+
+Baby Blue: #5C9DF2;

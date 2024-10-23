@@ -9,7 +9,7 @@ article {
   position: relative;
   border-radius: 0.25rem;
   box-shadow: none;
-  background: #F2F2F2;
+  background: #0D65D9;
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -28,13 +28,13 @@ article h2 {
   font-family: "Helvetica", sans-serif;
   font-size: 1.9rem;
   letter-spacing: 0.06em;
-  color: #0D0106;
+  color: #F2F2F2;
   transition: color 0.3s ease-out;
 }
 
 figure {
   margin: 0;
-  padding: 0;
+  padding: 15px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
 }
@@ -44,6 +44,7 @@ article img {
   transform-origin: center;
   transform: scale(var(--img-scale));
   transition: transform 0.4s ease-in-out;
+  border-radius: 0.25rem;
 }
 
 .article-body {

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.image-data span.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #F2F2F2;
+}
+
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #F2F2F2;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  color: #0D65D9;
+  background: #F2F2F2;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  color: #F2F2F2;
+  background-color: #0D65D9;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.nav-btn:hover {
+  background: transparent;
+}
+
+.swiper-button-next {
+  right: 50px;
+}
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #F2F2F2;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #F2F2F2;
+  visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid #F2F2F2;
+  background-color: #0D65D9;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .image-data h2 {
+    font-size: 35px; /* Adjust heading size for tablets */
+  }
+  
+  a.button {
+    padding: 8px 16px; /* Adjust button size for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-data h2 {
+    font-size: 28px; /* Further adjust heading size for mobile */
+  }
+
+  a.button {
+    padding: 6px 12px; /* Further adjust button size for mobile */
+  }
+
+  .nav-btn {
+    visibility: hidden; /* Hide navigation buttons on smaller screens */
+  }
+
+  .swiper-pagination-bullet {
+    visibility: visible; /* Show pagination bullets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-data span.text {
+    font-size: 14px; /* Adjust text size for mobile */
+  }
+}

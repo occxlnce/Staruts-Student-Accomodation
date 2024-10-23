@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>WITS - Staruts Students Accomodation</title>
+  <link rel="shortcut icon" href="img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,7 +13,21 @@
   <link rel="stylesheet" href="css/carolslider.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">  
- 
+<style>
+  section {
+    background: 
+      linear-gradient(#0d0106ab 0 0),
+      url("img/wits.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    gap: 2ch;
+    place-content: center;
+    text-align: center;
+	background-repeat: no-repeat;
+  }
+
+</style> 
 
 </head>
 <body>
@@ -27,7 +42,7 @@
         <span></span>
       </button>
       <a href="index.html">
-        <h4>Staruts<span></span></h4>
+        <img src="img/logo.png" alt="Staruts Logo" class="logo" />
       </a>
     </div>
 
@@ -52,15 +67,15 @@
             View Rooms <i class="fa fa-angle-down"></i>
           </a>
           <ul class="dropdown" id="blog">
-            <li><a href="#">Polokwane</a></li>
-            <li><a href="#">Gezina</a></li>
-			<li><a href="#">Johannesburg</a></li>
-            <li><a href="#">Pretoria</a></li>
+            <li><a href="polokwane.html">Polokwane</a></li>
+            <li><a href="gezina.html">Gezina</a></li>
+			<li><a href="joburg.html">Johannesburg</a></li>
+            <li><a href="pretoria.html">Pretoria</a></li>
           </ul>
         </li>
         <li><a href="apply.html">Apply</a></li>
 		<li><a href="#">UJ & WITS Apply Here</a></li>
-        <li><a href="#">House Rules</a></li>
+		<li><a href="houserules.html">House Rules</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -86,7 +101,7 @@ Wits offers undergraduate degrees and postgraduate degrees and diplomas, as well
 
 <footer class="footer">
   <div class="footer__addr">
-    <h1 class="footer__logo">Staruts</h1>
+    <img src="img/logo.png" alt="Staruts Logo" class="logo" />
         
     <h2>Contact</h2>
     <br>
@@ -124,7 +139,7 @@ Wits offers undergraduate degrees and postgraduate degrees and diplomas, as well
         </li>
 
         <li>
-          <a href="#">House Rules</a>
+          <a href="houserules.html">House Rules</a>
         </li>		
 		
       </ul>

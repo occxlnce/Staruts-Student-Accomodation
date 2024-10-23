@@ -2,32 +2,28 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>TUT - Staruts Students Accomodation</title>
+  <title>Johannesburg - Staruts Students Accomodation</title>
   <link rel="shortcut icon" href="img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/university.css">
-  <link rel="stylesheet" href="css/carolslider.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/contact.css"> 
   <link rel="stylesheet" href="css/footer.css">  
-<style>
-  section {
-    background: 
-      linear-gradient(#0d0106ab 0 0),
-      url("img/tut.png");
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    gap: 2ch;
-    place-content: center;
-    text-align: center;
-	background-repeat: no-repeat;
-  }
-
-</style> 
+  <link rel="stylesheet" href="css/houserules.css"> 
+  <link rel="stylesheet" href="css/accomodation.css">   
+  
+  
+  
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />	
+	
 
 </head>
 <body>
@@ -82,18 +78,73 @@
   </div>
 </nav>
 
-<section>
-  <h1 class="university">Tshwane University of Technology (TUT)</h1>
-  <center>
-  <p class="subhead">Our mission directs us towards solving pressing societal problems and ensuring that our graduates are productive and active citizens. Our suite of programmes and qualifications, research and innovation, as well as engagement with stakeholders are aimed at making a positive impact on our communities.</p>
-	<br>  
-  
-  <button class="btn btn-primary">Visit Our Page</button>
-	<br>
-	<br>
-	<br>
-  </center>
+<header id="hero-top" class="header-container">
+  <h1>Marshallyards Student Accommodation (Johannesburg)</h1>
+  <div class="header-title">
+    <p>Safe and Secure Student Living</p>
+  </div>
+  <p class="header-date">Experience comfortable and modern student life!</p>
+</header>
+
+<main>
+  <div id="section-bio">
+    <p class="intro-text">
+      Welcome to Marshallyards Student Accommodation, located in Johannesburg. Our student housing offers a secure, modern, and convenient environment for students to live and study. With top-notch amenities and a focus on safety, it's the perfect place to call home during your academic journey.
+    </p>
+    <p>
+      Here are the features that make Marshallyards a perfect choice for students:
+    </p>
+    <ul>
+      <li>Main Building</li>
+      <li>24/7 Security + CCTV</li>
+      <li>Biometric Access</li>
+      <li>Building & Communal Area</li>
+      <li>Living Room</li>
+      <li>Entertainment Room (TV + DSTV)</li>
+      <li>Kitchen</li>
+      <li>Laundry Room</li>
+      <li>Toilet & Shower</li>
+      <li>Study Room</li>
+      <li>Room 1</li>
+      <li>Cupboards</li>
+      <li>Room 2</li>
+      <li>Room 3</li>
+      <li>Room 4</li>
+      <li>Room 5</li>
+      <li>Room 6</li>
+    </ul>
+  </div>
+</main>
+
+<!-- Gallery -->
+<section id="gallery-images">
+  <div class="gallery-intro">
+    <h2>Image Gallery</h2>
+    <p>
+      Explore our facilities and see what makes Marshallyards Student Accommodation the ideal place for students in Johannesburg. Our living spaces are designed for relaxation, entertainment, and study, providing a balanced environment for every student.
+    </p>
+  </div>
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="path_to_image1.jpg" alt="Main Building"></div>
+    <div class="gallery-item"><img src="path_to_image2.jpg" alt="24/7 Security + CCTV"></div>
+    <div class="gallery-item"><img src="path_to_image3.jpg" alt="Biometric Access"></div>
+    <div class="gallery-item"><img src="path_to_image4.jpg" alt="Building & Communal Area"></div>
+    <div class="gallery-item"><img src="path_to_image5.jpg" alt="Living Room"></div>
+    <div class="gallery-item"><img src="path_to_image6.jpg" alt="Entertainment Room (TV + DSTV)"></div>
+    <div class="gallery-item"><img src="path_to_image7.jpg" alt="Kitchen"></div>
+    <div class="gallery-item"><img src="path_to_image8.jpg" alt="Laundry Room"></div>
+    <div class="gallery-item"><img src="path_to_image9.jpg" alt="Toilet & Shower"></div>
+    <div class="gallery-item"><img src="path_to_image10.jpg" alt="Study Room"></div>
+    <div class="gallery-item"><img src="path_to_image11.jpg" alt="Room 1"></div>
+    <div class="gallery-item"><img src="path_to_image12.jpg" alt="Cupboards"></div>
+    <div class="gallery-item"><img src="path_to_image13.jpg" alt="Room 2"></div>
+    <div class="gallery-item"><img src="path_to_image14.jpg" alt="Room 3"></div>
+    <div class="gallery-item"><img src="path_to_image15.jpg" alt="Room 4"></div>
+    <div class="gallery-item"><img src="path_to_image16.jpg" alt="Room 5"></div>
+    <div class="gallery-item"><img src="path_to_image17.jpg" alt="Room 6"></div>
+  </div>
 </section>
+
 
 
 
@@ -190,6 +241,14 @@
 <!-- partial -->
   <script  src="js/script.js"></script>
   <script  src="js/headslider.js"></script>
+  <script  src="js/houserules.js"></script>  
+  <script  src="js/contact.js"></script>  
+  <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>   
+    <script src="js/accomodation.js"></script>   	
 
 </body>
 </html>

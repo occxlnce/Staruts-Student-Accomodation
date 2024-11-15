@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+// Full tutorial coming soon!
 
-$transition-time: 2.3s;
+.card {
+  --card-gradient: rgba(0, 0, 0, 0.8);
+  --card-gradient: #5e9ad9, #e271ad;
+  // --card-gradient: tomato, orange;
+  --card-blend-mode: overlay;
+  // --card-blend-mode: multiply;
 
-body{
-	font-family: 'Oswald', sans-serif;
-	background-color: #212121;
-	section{
-		width: 90%;
-		max-width: 1200px;
-		margin: 0 auto;
-		.row{
-			align-items: center;
-    	height: 100vh;
-		}
-	}
-}
-.card{
-	position: relative;
-	height: 400px;
-	width: 100%;
-	margin: 10px 0;
-	transition: ease all $transition-time;
-	perspective: 1200px;
-	&:hover{
-		.cover{
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  background-image: linear-gradient(
+    var(--card-gradient),
+    white max(9.5rem, 27vh)
+  );
+  overflow: hidden;
+
+  img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    // height: max(10rem, 25vh);
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;

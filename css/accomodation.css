@@ -1,24 +1,13 @@
+/* demo shizzle only */
 body {
-  margin: 0;
-  font-family: 'Muli', sans-serif;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow-x: hidden;
+  background: #eee;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+/*   outline: 1px solid #ccc; */
 }
 
-.background {
-  background: url('https://images.pexels.com/photos/1095624/pexels-photo-1095624.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
-    center top no-repeat #252746;
-  background-size: cover;
-  display: block;
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
+/* Still use global css (not utility css) for base typography etc? */
+p {
+  margin-bottom: 0.8em;
 }
-
-.background-texture {
-  background: -webkit-gradient(
-    linear,

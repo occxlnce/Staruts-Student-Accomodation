@@ -60,7 +60,7 @@ a: hover {
 
 .navbar {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background-color: #F2F2F2;
+  background-color: #FFF;
   padding: 1rem 1.15rem;
   border-bottom: 1px solid #5C9DF2;
 }
